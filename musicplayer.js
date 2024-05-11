@@ -15,7 +15,7 @@ const MyB10 = document.getElementById("b10")
 })*/
 MyF10.addEventListener("click", function()
 {
-  AudioFile.currentTime=AudioFile.currentTime + 10 
+  AudioFile.currentTime= AudioFile.currentTime + 10 
 
 })
 MyB10.addEventListener("click", function(){
