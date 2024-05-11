@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="musicplayer.css">
+    </head>
+    <body>
+        <div class="container">
+         <img src="images/image-1.jpg" id="image"/>
+
+         <h2 id="songname">Nandanandanaa</h2>
+
+         <h3 id="singername">Sid Sriram</h3>
+
+         <div class="progresscontainer" id="progresscontainer">
+            <div class="progressbar"></div>
+        </div>
+        <div class="time">
+            <div class="currenttime">0:00</div>
+            <div class="totaltime">4:58</div>
+        </div>
+        <div id="slider-container" id="volume-control">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setvolume()">
+            <i class="fa fa-volume-up"></i>
+
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+            <i class="fa-solid fa-arrow-rotate-left" id="b10"></i>
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-arrow-rotate-right" id="f10"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+            <i class="fa-solid fa-heart" id="heart"></i>
+        </div>
+        
+        <div id="audio">
+        <audio src="musics/music-1.mp3"></audio>
+        </div>
+
+
+
+
+    <script src="musicplayer.js"></script>
+    </body>
+    </html>
